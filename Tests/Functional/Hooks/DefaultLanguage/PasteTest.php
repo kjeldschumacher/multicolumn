@@ -143,7 +143,7 @@ class tx_multicolumn_alt_clickmenuTest extends tx_multicolumn_tcemainBaseTest
 
         $this->assertNoProssesingErrorsInDataHandler($dataHandler);
 
-        $count = $this->getDatabaseConnection()->exec_SELECTcountRows(
+        $count = $this->getDatabaseConnection()->getSelectCount(
             '*',
             tx_multicolumn_tcemainBaseTest::CONTENT_TABLE,
             'uid=3'

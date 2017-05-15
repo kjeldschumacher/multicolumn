@@ -57,7 +57,7 @@ class tx_multicolumn_tcemainNewTest extends tx_multicolumn_tcemainBaseTest
 
         $this->assertNoProssesingErrorsInDataHandler($dataHandler);
 
-        $count = $this->getDatabaseConnection()->exec_SELECTcountRows(
+        $count = $this->getDatabaseConnection()->getSelectCount(
             '*',
             tx_multicolumn_tcemainBaseTest::CONTENT_TABLE,
             'pid=2'
@@ -96,7 +96,7 @@ class tx_multicolumn_tcemainNewTest extends tx_multicolumn_tcemainBaseTest
 
         $this->assertNoProssesingErrorsInDataHandler($dataHandler);
 
-        $count = $this->getDatabaseConnection()->exec_SELECTcountRows(
+        $count = $this->getDatabaseConnection()->getSelectCount(
             '*',
             tx_multicolumn_tcemainBaseTest::CONTENT_TABLE,
             'pid=1'
@@ -135,7 +135,7 @@ class tx_multicolumn_tcemainNewTest extends tx_multicolumn_tcemainBaseTest
 
         $this->assertNoProssesingErrorsInDataHandler($dataHandler);
 
-        $count = $this->getDatabaseConnection()->exec_SELECTcountRows(
+        $count = $this->getDatabaseConnection()->getSelectCount(
             '*',
             tx_multicolumn_tcemainBaseTest::CONTENT_TABLE,
             'pid=1'
@@ -174,7 +174,7 @@ class tx_multicolumn_tcemainNewTest extends tx_multicolumn_tcemainBaseTest
 
         $this->assertNoProssesingErrorsInDataHandler($dataHandler);
 
-        $count = $this->getDatabaseConnection()->exec_SELECTcountRows(
+        $count = $this->getDatabaseConnection()->getSelectCount(
             '*',
             tx_multicolumn_tcemainBaseTest::CONTENT_TABLE,
             'pid=1'

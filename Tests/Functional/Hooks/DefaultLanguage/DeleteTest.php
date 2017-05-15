@@ -50,7 +50,7 @@ class tx_multicolumn_tcemainDeleteTest extends tx_multicolumn_tcemainBaseTest
 
         $this->assertNoProssesingErrorsInDataHandler($dataHandler);
 
-        $count = $this->getDatabaseConnection()->exec_SELECTcountRows(
+        $count = $this->getDatabaseConnection()->getSelectCount(
             '*',
             tx_multicolumn_tcemainBaseTest::CONTENT_TABLE,
             'uid IN (1,2)'
