@@ -56,7 +56,7 @@ class tx_multicolumn_wizardItemsHook implements \TYPO3\CMS\Backend\Wizard\NewCon
         $LL = $this->includeLocalLang();
 
         $multicolumnElement = [
-            'icon' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath('multicolumn') . 'pi1/ce_wiz.gif',
+            'icon' => 'EXT:multicolumn/pi1/ce_wiz.gif',
             'title' => $LANG->getLLL('pi1_title', $LL),
             'description' => $LANG->getLLL('pi1_plus_wiz_description', $LL),
             'tt_content_defValues' => [
